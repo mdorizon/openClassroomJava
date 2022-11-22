@@ -17,6 +17,16 @@ class Vehicule {
 
 class Voiture extends Vehicule {
 
+    @Override
+    void start(){
+        super.start();
+
+        allumerFeux();
+    }
+
+    void allumerFeux(){
+        System.out.println("Allumage feux");
+    }
 }
 
 class Bateau extends Vehicule {
